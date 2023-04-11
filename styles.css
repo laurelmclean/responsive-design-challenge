@@ -1,0 +1,64 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    margin: 2em auto;
+    padding: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+            'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+            sans-serif;
+    max-width: 1200px;
+}
+
+article {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    max-width: 600px;
+}
+
+.features {
+    padding-left: 1rem;
+}
+
+.image {
+    max-width: 200px;
+    height: auto;
+    display: block;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.features-list div {
+    background-color: rgb(245, 237, 237);
+    padding: 0.35rem;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    article {
+        background-color: aquamarine;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
